@@ -42,7 +42,7 @@ while True:
                     cnt = None
 
                     try:
-                        energia = os.popen("./driver energy").read()
+                        energia = os.popen("/root/driver energy").read()
                         if not 0 <= float(energia) <= 500:
                             err = 1
                         else:
@@ -55,7 +55,7 @@ while True:
                     cnt = None
 
                     try:
-                        angulo = os.popen("./driver angle").read()
+                        angulo = os.popen("/root/driver angle").read()
                         if not 0 <= float(angulo) <= 90:
                             err = 1
                         else:
@@ -68,7 +68,7 @@ while True:
                     cnt = None
 
                     try:
-                        estado = os.popen("./driver status").read()
+                        estado = os.popen("/root/driver status").read()
                         if estado=='on':
                             cnt = "Encendido"
                         elif estado=='off':
@@ -83,7 +83,7 @@ while True:
                     cnt = None
 
                     try:
-                        salida = os.popen("./driver on").read()
+                        salida = os.popen("/root/driver on").read()
                         if salida != 'ok':
                             err = 1
                     except:
@@ -94,7 +94,7 @@ while True:
                     cnt = None
 
                     try:
-                        salida = os.popen("./driver off").read()
+                        salida = os.popen("/root/driver off").read()
                         if salida != 'ok':
                             err = 1
                     except:
@@ -104,7 +104,7 @@ while True:
                     cnt = None
 
                     try:
-                        salida = os.popen("./driver move "+pkt_content).read()
+                        salida = os.popen("/root/driver move "+pkt_content).read()
                         if salida != 'ok':
                             err = 1
                     except:

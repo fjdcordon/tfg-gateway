@@ -3,7 +3,7 @@
 #include <string.h>
 
 void menu(){
-    printf("\n********** Siemens PLC Driver **********\n");
+    printf("\n**************  PLC Driver **************\n");
     printf("   usage: ./driver <action> [<value>]\n\n");
     printf("             -- Actions: --\n");
     printf("          on: Start the system\n");

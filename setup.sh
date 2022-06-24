@@ -6,4 +6,6 @@ pip install scapy
 cp gtw.service /etc/systemd/system
 systemctl enable gtw
 cp eth0.network /etc/systemd/network
+cd ..
+rm -rf tfg-gateway
 shutdown now

@@ -1,9 +1,7 @@
-1. pacman -S git python-pip
-
 Gateway IoT de una instalación fotovoltaica
 =============
 
-Este Gateway IoT es uno de los componentes del escenario que se ha puesto en marcha para la realización de una prueba de concepto (PoC) que tiene como objetivo analizar las posibilidades de explotación de vulnerabilidades en entornos del Internet Industrial de las Cosas (IIoT). Este escenario está compuesto además por otros dos elementos: un componente IT, un ([servidor web](https://github.com/fjdcordon/tfg-servidorweb)) para la monitorización y control de la infraestructura a distancia; y un componente OT, una simulación de un PLC industrial real ([PLC-SIM](https://github.com/fjdcordon/tfg-plc)).
+Este Gateway IoT es uno de los componentes del escenario que se ha puesto en marcha para la realización de una prueba de concepto (PoC) que tiene como objetivo analizar las posibilidades de explotación de vulnerabilidades en entornos del Internet Industrial de las Cosas (IIoT). Este escenario está compuesto además por otros dos elementos: un componente IT, un [servidor web](https://github.com/fjdcordon/tfg-servidorweb) para la monitorización y control de la infraestructura a distancia; y un componente OT, una simulación de un PLC industrial real ([PLC-SIM](https://github.com/fjdcordon/tfg-plc)).
 
 Para más información sobre el desarrollo de este escenario y la verificación de esta prueba de concepto se puede consultar mi Trabajo de Fin de Grado: «Análisis y explotación de vulnerabilidades en un sistema de monitorización y control remoto de energía solar».
 
@@ -30,7 +28,7 @@ cd tfg-gateway
 chmod +x setup.sh
 sudo ./setup.sh
 ```
-El primer comando sirve para cambiar el *layout* del teclado al Español. Se pueden consultar todos los tipos de *layout* con el comando *localectl list-keymaps*.
+El primer comando sirve para cambiar el *layout* del teclado al Español. Se pueden consultar todos los tipos de *layout* con el comando  *localectl list-keymaps*.
 
 4. Una vez finalizada la ejecución del script, la máquina se apagará. Antes de volver a encenderla, es necesario ir a la configuración de red de la máquina y cambiar el único adaptador que tiene de modo *NAT* a modo *Red Interna* o *Internal Network*. El nombre de la red interna es el que viene por defecto: *intnet*.
 

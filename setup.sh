@@ -1,5 +1,4 @@
-
-localectl set-keymap --no-convert es
+#!/bin/bash
 echo gateway > /etc/hostname
 userdel -r vagrant
 cp driver gateway.py protocols.py /root

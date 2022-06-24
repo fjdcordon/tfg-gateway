@@ -22,6 +22,14 @@ Instalación
 
 5. Con la sesión de root iniciada ejecutaremos los siguientes comandos:
 
+```bash
+pacman -Syyu git python-pip
+sudo apt install git mysql-server apache2 python3 python3-pip python3-venv libapache2-mod-wsgi-py3 php libapache2-mod-php
+git clone https://github.com/fjdcordon/tfg-servidorweb
+cd tfg-servidorweb
+chmod +x setup.sh
+sudo ./setup.sh
+```
 
 lo abrimos y pulsamos sobre el botón *New* o *Nueva* (dependiendo del idioma en que este configurado el equipo anfitrión). Pondremos el nombre que deseemos a la máquina, indicaremos que se trata de un Linux y que la distribución es Ubuntu (64-bit). Dejaremos el resto de la configuración por defecto.
 

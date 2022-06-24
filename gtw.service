@@ -1,0 +1,11 @@
+[Unit]
+Description=Gateway IoT
+After=systemd-networkd.service
+After=systemd-networkd-wait-online.service
+After=systemd-network-generator.service
+
+[Service]
+ExecStart= python /root/gateway.py
+
+[Install]
+WantedBy=multi-user.target

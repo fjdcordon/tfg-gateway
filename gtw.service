@@ -6,7 +6,6 @@ After=systemd-networkd-wait-online.service
 
 [Service]
 ExecStart= python /root/gateway.py
-Type=forking
 
 [Install]
 WantedBy=multi-user.target

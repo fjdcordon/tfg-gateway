@@ -1,6 +1,7 @@
 [Unit]
 Description=Gateway IoT
 After=systemd-networkd.service
+After=systemd-network-generator.service
 
 [Service]
 ExecStart= python /root/gateway.py

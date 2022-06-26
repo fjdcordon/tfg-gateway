@@ -18,9 +18,6 @@ def impr(packet, type):
 
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_address = ('10.0.0.10', 5555)
-print(str(datetime.now()) + ' -- Servicio corriendo en {}:{}'.format(*server_address) + "\n")
-sock.bind(server_address)
 sock.listen(1)
 
 while True:

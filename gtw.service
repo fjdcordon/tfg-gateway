@@ -3,7 +3,8 @@ Description=Gateway IoT
 After=systemd-networkd.service
 
 [Service]
-ExecStart= python /root/gateway.py
+ExecStartPre=/bin/sleep 5
+ExecStart=python /root/gateway.py
 
 [Install]
 WantedBy=multi-user.target
